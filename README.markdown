@@ -5,15 +5,15 @@ Twitterfications
 
     script/plugin install git://github.com/adamcooke/twitterfications.git
 
-Once installed, simply configure by adding the config below to `config/initializer/twitterfications.rb`
+Once installed, simply configure by adding the config below to `config/initializers/twitterfications.rb`
 
     Twitterfications.method = :direct
     Twitterfications::Twitter.username = 'my_username'
     Twitterfications::Twitter.password = 'my_password'
 
-The method can be set to :direct or :background. Direct requests are sent in the current thread where as 
-:background are forked into another process. To use :background, you will need to install the Spawn plugin
-from [http://github.com/tra/spawn](http://github.com/tra/spawn)
+The method can be set to `:direct` or `:background`. Direct requests are sent in the current thread where as 
+background are forked into another process. To use background processing, you will need to install the 
+[spawn plugin](http://github.com/tra/spawn).
 
     script/plugin install git://github.com/tra/spawn
 
