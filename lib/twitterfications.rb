@@ -2,6 +2,7 @@ require 'uri'
 require 'net/http'
 
 require 'twitterfications/active_record_extensions'
+require 'twitterfications/action_controller_extensions'
 
 module Twitterfications
   
