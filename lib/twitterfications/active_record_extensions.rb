@@ -14,7 +14,6 @@ module Twitterfications
       
       def tweet(status)
         Twitterfications.post(status)
-        return true
       end
       
       private
