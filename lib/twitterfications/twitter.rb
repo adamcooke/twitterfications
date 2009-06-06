@@ -20,11 +20,13 @@ module Twitterfications
       end
     end
     
-    
     def post(status)
       deliver('/statuses/update.xml', {:status => status})
     end
     
+    def self.post(status)
+      self.new.post(status)
+    end
     
     private
     
