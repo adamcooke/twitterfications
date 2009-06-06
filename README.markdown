@@ -6,7 +6,7 @@ Twitterfications
     script/plugin install git://github.com/adamcooke/twitterfications.git
 
 Once installed, simply configure by adding the config below to `config/initializer/twitterfications.rb`
-`
+
     Twitterfications.method = :direct
     Twitterfications::Twitter.username = 'my_username'
     Twitterfications::Twitter.password = 'my_password'
