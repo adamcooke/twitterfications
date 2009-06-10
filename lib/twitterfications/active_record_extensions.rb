@@ -20,7 +20,7 @@ module Twitterfications
       
       def deliver_twitterfications(callback)
         twitterfications = self.class.read_inheritable_attribute(:twitterfications)
-        #return unless twitterfications
+        return unless twitterfications
         callbacks = [callback]
         callbacks << :save if [:create, :update].include?(callback)
         twitterfications = twitterfications.select{|t| callbacks.include?(t[:callback])}
