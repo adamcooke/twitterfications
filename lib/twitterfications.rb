@@ -6,8 +6,6 @@ require 'twitterfications/action_controller_extensions'
 
 module Twitterfications
   
-  
-  
   mattr_accessor :method
   
   def self.post(status)
