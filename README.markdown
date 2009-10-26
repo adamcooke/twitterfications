@@ -48,4 +48,3 @@ If you'd like to tweet from anywhere else in your application, you can post dire
 calling:
 
     Twitterfications.post("Your tweet here")
-  
